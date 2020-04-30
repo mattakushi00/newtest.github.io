@@ -1,0 +1,228 @@
+.animation-moveRight {
+    animation: moveRight 1s ease-in-out;
+}
+
+.animation-ufo {
+    animation: ufo 1s ease-in;
+}
+
+.animation-moveLeft {
+    animation: moveLeft 1s ease-in-out;
+}
+
+@keyframes ufo {
+    from {
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    to {
+        top: 200px;
+        left: 200px;
+        opacity: 0;
+    }
+}
+
+@keyframes moveRight {
+    from {
+        left: 200px;
+        opacity: 0;
+    }
+
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes moveLeft {
+    from {
+        right: 200px;
+        opacity: 0;
+    }
+
+    to {
+        right: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes fly {
+    from {
+        top: 200px;
+    }
+
+    50% {
+        top: 125px;
+    }
+
+    to {
+        top: 200px;
+    }
+}
+
+@keyframes move {
+    from {
+        left: 0;
+    }
+
+    50% {
+        left: 15px;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+@keyframes arrow-after {
+    from {
+        right: -20px;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        right: -40px;
+        transform: rotate(10deg);
+    }
+
+    to {
+        right: -20px;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes arrow-before {
+    from {
+        left: -70px;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        left: -60px;
+        transform: rotate(-10deg);
+    }
+
+    to {
+        left: -70px;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes btn {
+    from {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes circle {
+    from {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 1300px){
+    @keyframes ufo {
+        from {
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        to {
+            top: 100px;
+            left: 400px;
+            right: 0;
+            margin: auto;
+            opacity: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    @keyframes arrow-after {
+        from {
+            right: -50px;
+            transform: rotate(0deg);
+        }
+
+        50% {
+            right: -70px;
+            transform: rotate(10deg);
+        }
+
+        to {
+            right: -50px;
+            transform: rotate(0deg);
+        }
+    }
+
+    @keyframes arrow-before {
+        from {
+            left: -70px;
+            transform: rotate(0deg);
+        }
+
+        50% {
+            left: -50px;
+            transform: rotate(-10deg);
+        }
+
+        to {
+            left: -70px;
+            transform: rotate(0deg);
+        }
+    }
+
+    @keyframes fly {
+        from {
+            top: 125px;
+        }
+
+        50% {
+            top: 200px
+        }
+        to {
+            top: 125px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    @keyframes fly {
+        from {
+            top: -320px;
+        }
+
+        50% {
+            top: -300px;
+        }
+
+        to {
+            top: -320px;
+        }
+    }
+}

@@ -83,6 +83,7 @@ ul {
     max-width: 1920px;
     width: 100%;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .container {
@@ -324,12 +325,8 @@ select {
     margin: auto;
     max-width: 400px;
     width: 100%;
+    animation: fly 3s ease-in-out infinite;
 }
-
-footer .order-product {
-    opacity: 0;
-}
-
 
 .sick {
     background: url("../img/sick-bg.png") no-repeat center;
@@ -414,6 +411,32 @@ footer .order-product {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     transform: scale(1);
     transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+.phrase-item_1 {
+    animation: move 2s ease-in-out infinite;
+}
+.phrase-item_2 {
+    animation: move 3s ease-in-out infinite;
+}
+.phrase-item_3 {
+    animation: move 1.5s ease-in-out infinite;
+}
+.phrase-item_4 {
+    animation: move 2.5s ease-in-out infinite;
+}
+.phrase-item_5 {
+    animation: move 3.5s ease-in-out infinite;
+}
+.phrase-item_6 {
+    animation: move 1s ease-in-out infinite;
+}
+.phrase-item_7 {
+    animation: move 5s ease-in-out infinite;
+}
+.phrase-item_8 {
+    animation: move 4.5s ease-in-out infinite;
 }
 
 .phrase-item:hover {
@@ -433,6 +456,20 @@ footer .order-product {
     position: relative;
 }
 
+.ufo {
+    width: 30px;
+    height: 30px;
+    background-color: #ffe1a8;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    box-shadow: 0 0 30px rgb(255,255,255);
+    opacity: 0;
+    transform: skew(60deg);
+    z-index: 0;
+}
+
 .help-title {
     font-size: 57px;
     line-height: 57px;
@@ -440,6 +477,8 @@ footer .order-product {
     font-family: 'Montserrat ExtraBold';
     text-transform: uppercase;
     margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
 }
 
 .help-text {
@@ -448,12 +487,39 @@ footer .order-product {
     color: #000;
 }
 
+.work-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
 .work {
     padding: 80px 0 155px;
-    background: url("../img/how-bg.png") no-repeat center;
+    background: url("../img/work-bg.png") no-repeat center;
     background-size: cover;
     position: relative;
     z-index: 2;
+}
+
+.work-space {
+    background: url("../img/work-before.png") center;
+    background-size: cover;
+    width: 937px;
+    height: 937px;
+    z-index: -1;
+    position: absolute;
+    top: -115px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.anime-circle {
+    animation: circle 240s infinite;
+}
+
+.work-bg {
+    z-index: 0;
 }
 
 .work-title {
@@ -464,12 +530,16 @@ footer .order-product {
     text-align: center;
     margin-bottom: 40px;
     color: #ffffff;
+    position: relative;
+    z-index: 5;
 }
 
 .work-item {
     border: 2px solid #603e29;
     background-color: rgba(0, 0, 0, 0.2);
     padding: 20px;
+    position: relative;
+    z-index: 5;
 }
 
 .work-item_right {
@@ -507,12 +577,12 @@ footer .order-product {
     max-width: 320px;
     margin: 0 auto;
     border-radius: 50%;
-    box-shadow: 0 0 0 rgba(0,0,0,0);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
     transition: all 0.1s ease-in-out;
 }
 
 .how-img:hover {
-    box-shadow: 0 0 50px rgba(255,255,255,1);
+    box-shadow: 0 0 50px rgba(255, 255, 255, 1);
 }
 
 .how-item-2 {
@@ -572,6 +642,7 @@ footer .order-product {
     margin-bottom: 25px;
     padding: 0;
     margin-left: auto;
+    opacity: 0;
 }
 
 .stop-img {
@@ -714,72 +785,6 @@ footer .order-product {
     color: #f4eb95;
 }
 
-@keyframes moveTop {
-    from {
-        opacity: 0;
-        top: 620px;
-        max-width: 0;
-    }
-
-    to {
-        opacity: 1;
-        top: 125px;
-        max-width: 400px;
-    }
-}
-
-@keyframes arrow-after {
-    from {
-        right: -20px;
-        transform: rotate(0deg);
-    }
-
-    50% {
-        right: -40px;
-        transform: rotate(10deg);
-    }
-
-    to {
-        right: -20px;
-        transform: rotate(0deg);
-    }
-}
-
-@keyframes arrow-before {
-    from {
-        left: -70px;
-        transform: rotate(0deg);
-    }
-
-    50% {
-        left: -60px;
-        transform: rotate(-10deg);
-    }
-
-    to {
-        left: -70px;
-        transform: rotate(0deg);
-    }
-}
-
-@keyframes btn {
-    from {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.05);
-    }
-
-    to {
-        transform: scale(1);
-    }
-}
-
-.animation-moveTop {
-    animation: moveTop 3s ease;
-}
-
 @media screen and (max-width: 991px) {
 
     header,
@@ -792,13 +797,6 @@ footer .order-product {
 
     .mob-product {
         display: flex;
-    }
-
-    .mob-product .order-product {
-        display: block;
-        position: relative;
-        transform: scale(2);
-        top: 0;
     }
 
 
@@ -873,39 +871,6 @@ footer .order-product {
         top: -350px;
     }
 
-    @keyframes arrow-after {
-        from {
-            right: -50px;
-            transform: rotate(0deg);
-        }
-
-        50% {
-            right: -70px;
-            transform: rotate(10deg);
-        }
-
-        to {
-            right: -50px;
-            transform: rotate(0deg);
-        }
-    }
-
-    @keyframes arrow-before {
-        from {
-            left: -70px;
-            transform: rotate(0deg);
-        }
-
-        50% {
-            left: -50px;
-            transform: rotate(-10deg);
-        }
-
-        to {
-            left: -70px;
-            transform: rotate(0deg);
-        }
-    }
 
     .how-item-2 {
         padding-top: 0;
@@ -931,19 +896,6 @@ footer .order-product {
     }
 
 
-    @keyframes moveTop {
-        from {
-            opacity: 0;
-            top: 420px;
-            max-width: 0;
-        }
-
-        to {
-            opacity: 1;
-            top: 125px;
-            max-width: 200px;
-        }
-    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1048,18 +1000,12 @@ footer .order-product {
         line-height: 40px;
     }
 
-    @keyframes moveTop {
-        from {
-            opacity: 0;
-            top: 620px;
-            max-width: 0;
-        }
+    .work-space {
+        left: -100px;
+    }
 
-        to {
-            opacity: 1;
-            top: 125px;
-            max-width: 300px;
-        }
+    .help:after {
+        display: none;
     }
 
 }
@@ -1082,15 +1028,6 @@ footer .order-product {
         bottom: initial;
     }
 
-    @keyframes moveTop {
-        from {
-            opacity: 0;
-        }
-
-        to {
-            opacity: 1;
-        }
-    }
 
     .order-right {
         justify-content: center;
@@ -1157,6 +1094,10 @@ footer .order-product {
 
     .slider {
         max-width: 320px;
+    }
+
+    .work-space {
+        left: -300px;
     }
 
 }

@@ -1,21 +1,29 @@
-(function animation(order) {
-    order[0].classList.add('animation-moveTop');
-
-    window.addEventListener('scroll', f2, false);
-
-    function f2() {
-        var orderTop = window.pageYOffset + order[1].getBoundingClientRect().top, /*получаю верхнюю границу элемента */
+(function animation(item, help, ufo) {
+    window.addEventListener('scroll', function () {
+        var helpBlock = window.pageYOffset + help[0].getBoundingClientRect().top,
             windowHeight = document.documentElement.clientHeight, /*высота окна */
-            visibleBottom = window.pageYOffset + windowHeight - 100; /* нижняя граница окна */
-        if (visibleBottom > orderTop) { /*если нижняя граница окна ниже элемента */
-            order[0].classList.add('animation-moveTop');
-            order[0].style.opacity = '1';
-            order[1].classList.add('animation-moveTop');
-            order[1].style.opacity = '1';
+            visibleBottom = window.pageYOffset + windowHeight - 200; /* нижняя граница окна */
+
+        for (var i = 0; i < item.length; i++) {
+            var itemTop = window.pageYOffset + item[i].getBoundingClientRect().top;
+            if (visibleBottom > itemTop) { /*если нижняя граница окна ниже элемента */
+                if (i % 2 !== 1) {
+                    item[i].classList.add('animation-moveLeft');
+                    item[i].style.opacity = '1';
+                } else {
+                    item[i].classList.add('animation-moveRight');
+                    item[i].style.opacity = '1';
+                }
+            }
         }
 
-    }
-    f2();
+        if (visibleBottom > helpBlock) { /*если нижняя граница окна ниже элемента */
+                ufo[0].classList.add('animation-ufo');
+        }
+
+    }, false);
 })(
-    document.getElementsByClassName('order-product')
+    document.getElementsByClassName('stop-item'),
+    document.getElementsByClassName('help'),
+    document.getElementsByClassName('ufo')
 );
