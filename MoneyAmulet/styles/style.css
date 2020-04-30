@@ -312,6 +312,7 @@ select {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     margin: 20px 0 0;
+    animation: btn 1s ease-in-out infinite;
 }
 
 .order-product {
@@ -323,6 +324,10 @@ select {
     margin: auto;
     max-width: 400px;
     width: 100%;
+}
+
+footer .order-product {
+    opacity: 0;
 }
 
 
@@ -357,6 +362,11 @@ select {
     border: 2px solid #94927c;
     border-radius: 10px;
     margin: 30px 0;
+    transition: background-color 0.3s ease-in;
+}
+
+.sick-text_darkBg:hover {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .text-bold {
@@ -402,6 +412,12 @@ select {
     margin-bottom: 15px;
     margin-right: 25px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.phrase-item:hover {
+    transform: scale(1.1);
 }
 
 .phraseItem-text {
@@ -491,6 +507,14 @@ select {
     max-width: 320px;
     margin: 0 auto;
     border-radius: 50%;
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+    transform: scale(1);
+    transition: all 0.1s ease-in-out;
+}
+
+.how-img:hover {
+    box-shadow: 0 0 50px rgba(255,255,255,1);
+    transform: scale(1.1);
 }
 
 .how-item-2 {
@@ -516,6 +540,7 @@ select {
 .how-item-2:before {
     left: -70px;
     bottom: -100px;
+    animation: arrow-before 1.5s ease-in infinite;
 }
 
 .how-item-2:after {
@@ -524,7 +549,7 @@ select {
     height: 86px;
     right: -20px;
     top: -200px;
-
+    animation: arrow-after 2s ease-in-out infinite;
 }
 
 .how-text {
@@ -553,6 +578,7 @@ select {
 
 .stop-img {
     width: 50%;
+    min-width: 50%;
 }
 
 .stop-item_odd {
@@ -690,6 +716,72 @@ select {
     color: #f4eb95;
 }
 
+@keyframes moveTop {
+    from {
+        opacity: 0;
+        top: 620px;
+        max-width: 0;
+    }
+
+    to {
+        opacity: 1;
+        top: 125px;
+        max-width: 400px;
+    }
+}
+
+@keyframes arrow-after {
+    from {
+        right: -20px;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        right: -40px;
+        transform: rotate(10deg);
+    }
+
+    to {
+        right: -20px;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes arrow-before {
+    from {
+        left: -70px;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        left: -60px;
+        transform: rotate(-10deg);
+    }
+
+    to {
+        left: -70px;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes btn {
+    from {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.animation-moveTop {
+    animation: moveTop 3s ease;
+}
+
 @media screen and (max-width: 991px) {
 
     header,
@@ -790,6 +882,21 @@ select {
         border: 1px solid lightgrey;
         border-radius: 10px;
         box-shadow: none;
+    }
+
+
+    @keyframes moveTop {
+        from {
+            opacity: 0;
+            top: 420px;
+            max-width: 0;
+        }
+
+        to {
+            opacity: 1;
+            top: 125px;
+            max-width: 200px;
+        }
     }
 }
 
@@ -898,6 +1005,21 @@ select {
         font-size: 40px;
         line-height: 40px;
     }
+
+    @keyframes moveTop {
+        from {
+            opacity: 0;
+            top: 620px;
+            max-width: 0;
+        }
+
+        to {
+            opacity: 1;
+            top: 125px;
+            max-width: 300px;
+        }
+    }
+
 }
 
 @media screen and (max-width: 576px) {
@@ -907,11 +1029,25 @@ select {
         background-position-x: 50%;
     }
 
+    header,
+    footer {
+        padding-top: 300px;
+    }
+
     .order-product {
-        display: block;
-        position: relative;
-        top: 0;
+        top: -300px;
         left: 0;
+        bottom: initial;
+    }
+
+    @keyframes moveTop {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
     }
 
     .order-right {
@@ -992,3 +1128,4 @@ select {
 .slick-dots li button:before {
     opacity: 0;
 }
+
