@@ -99,7 +99,8 @@ footer {
     z-index: 2;
 }
 
-header:before {
+header:before,
+footer:before {
     content: '';
     background: url("../img/order-light.png") no-repeat;
     width: 259px;
@@ -835,7 +836,8 @@ select {
 
 @media screen and (max-width: 991px) {
 
-    header:before {
+    header:before,
+    footer:before {
         bottom: -200px;
     }
 
@@ -968,7 +970,8 @@ select {
 
 @media screen and (max-width: 768px) {
 
-    header:before {
+    header:before,
+    footer:before {
         bottom: -430px;
         left: -230px;
     }
@@ -1116,6 +1119,7 @@ select {
     }
 
     header:before,
+    footer:before,
     .order-nuclear {
         display: none;
     }
