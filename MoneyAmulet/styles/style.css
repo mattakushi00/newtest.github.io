@@ -99,6 +99,22 @@ footer {
     z-index: 2;
 }
 
+header:before {
+    content: '';
+    background: url("../img/order-light.png") no-repeat;
+    width: 259px;
+    height: 209px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: -350px;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+    animation: light 2s ease infinite;
+}
+
 .product-logo {
     display: flex;
     align-items: center;
@@ -191,10 +207,6 @@ footer {
     border-radius: 5px;
     width: 100%;
     color: #ffffff;
-}
-
-.mob-product {
-    display: none;
 }
 
 .order-right {
@@ -318,7 +330,7 @@ select {
 
 .order-product {
     position: absolute;
-    top: 125px;
+    top: 200px;
     bottom: 0;
     right: 0;
     left: 0;
@@ -326,6 +338,31 @@ select {
     max-width: 400px;
     width: 100%;
     animation: fly 3s ease-in-out infinite;
+    z-index: 2;
+}
+
+.order-nuclear {
+    position: absolute;
+    top: 0;
+    bottom: -600px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    max-width: 19px;
+    width: 100%;
+    z-index: 1;
+}
+.order-nuclear_1 {
+    left: -250px;
+    animation: nuclear 1.5s ease-in-out infinite;
+}
+.order-nuclear_2 {
+    left: 250px;
+    animation: nuclear 2.5s ease infinite;
+}
+.order-nuclear_3 {
+    left: 170px;
+    animation: nuclear 3s ease-in infinite;
 }
 
 .sick {
@@ -457,16 +494,17 @@ select {
 }
 
 .ufo {
-    width: 30px;
-    height: 30px;
-    background-color: #ffe1a8;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(250, 250, 250,0.3);
     border-radius: 50%;
     position: absolute;
-    top: 50px;
-    left: 50px;
-    box-shadow: 0 0 30px rgb(255,255,255);
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 0 0 30px rgb(200,200,200);
     opacity: 0;
-    transform: skew(60deg);
     z-index: 0;
 }
 
@@ -515,7 +553,7 @@ select {
 }
 
 .anime-circle {
-    animation: circle 240s infinite;
+    animation: circle 240s linear infinite;
 }
 
 .work-bg {
@@ -606,9 +644,9 @@ select {
 }
 
 .how-item-2:before {
-    left: -70px;
+    left: 0;
     bottom: -100px;
-    animation: arrow-before 1.5s ease-in infinite;
+    animation: arrow-before 1.5s ease-in-out infinite;
 }
 
 .how-item-2:after {
@@ -787,6 +825,14 @@ select {
 
 @media screen and (max-width: 991px) {
 
+    header:before {
+        bottom: -200px;
+    }
+
+    .order-nuclear {
+        bottom: -350px;
+    }
+
     header,
     .sick,
     .comment,
@@ -794,11 +840,6 @@ select {
     footer {
         padding: 40px 0;
     }
-
-    .mob-product {
-        display: flex;
-    }
-
 
     .order-list {
         margin: 0 auto;
@@ -920,6 +961,7 @@ select {
     .order-product {
         left: -280px;
         max-width: 300px;
+        top: 300px;
     }
 
     .phrase {
@@ -1062,6 +1104,10 @@ select {
 
     .help {
         background-position-x: 57%;
+    }
+
+    .ufo {
+        display: none;
     }
 
     .help:before {
