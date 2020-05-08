@@ -1115,35 +1115,21 @@ select {
 @media screen and (max-width: 576px) {
 
     header, footer {
-        padding: 0;
         background-position-x: 50%;
-        padding-top: 300px;
-    }
-
-    header:after,
-    footer:after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-        position: absolute;
-        z-index: 0;
-        background-color: rgba(0,0,0,0.5);
+        padding-top: 0;
+        background-size: 1350px;
+        background-position-y: 0%;
+        background-color: #000000;
     }
 
     header:before,
     footer:before,
     .order-nuclear {
-        display: none;
+
     }
 
     .order-product {
-        top: -300px;
+        top: 190px;
         left: 0;
         bottom: initial;
     }
@@ -1169,15 +1155,73 @@ select {
         margin: 20px 5px;
     }
 
+    .order-title {
+        margin-bottom: 400px;
+    }
+
+    .orderList-items {
+        flex: 0 0 51%;
+    }
+
+    header:before,
+    footer:before {
+        bottom: 680px;
+        left: 30px;
+    }
+
+    .order-nuclear {
+        bottom: 470px;
+    }
+
+    .order-nuclear_1 {
+        left: -190px;
+    }
+
+    .order-nuclear_2 {
+        left: 150px;
+    }
+
+    .order-nuclear_3 {
+        left: 190px;
+    }
+
     .sick {
-        background: url(../img/sick-bg.png) no-repeat 65%;
-        background-size: cover;
+        background: url(../img/sick-bg.png) no-repeat 12% 0%;
+        background-size: 870px;
+        padding: 40px 0 0;
+    }
+
+    .sick:before {
+        display: none;
+    }
+
+    .sick .container {
+        margin-top: 240px;
+        background: linear-gradient(transparent, #696D77 1%);
+    }
+
+    .sick-title {
+        margin-top: 50px;
     }
 
     .sick-block {
         margin: 0;
         max-width: 100%;
         flex: 0 0 100%;
+    }
+
+    .phrase {
+        background-size: 1000px;
+        background-position: 70% 0%;
+    }
+
+    .phrase:before {
+        display: none;
+    }
+
+    .phrase .container {
+        margin-top: 300px;
+        background: linear-gradient(transparent, #f0f5f8 1%);
     }
 
     .help {
@@ -1226,8 +1270,26 @@ select {
         border: none;
     }
 
+    .work {
+        background-size: 600px;
+        background-position: 50% 0%;
+        padding: 20px 0 0;
+    }
+
+    .work .container {
+        margin-top: 250px;
+        background-color: #000000;
+    }
+
     .work-space {
-        left: -300px;
+        left: -30px;
+        top: -700px;
+        width: 400px;
+        height: 400px;
+    }
+
+    .work-item_right {
+        text-align: left;
     }
 
 }
