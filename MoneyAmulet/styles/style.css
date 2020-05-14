@@ -582,6 +582,7 @@ select {
     color: #ffffff;
     position: relative;
     z-index: 5;
+    text-shadow: 0 0 15px rgb(0,0,0);
 }
 
 .work-item {
