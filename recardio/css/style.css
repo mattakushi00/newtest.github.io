@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    line-height: 1.1;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url("../fonts/raleway/Raleway-Regular.woff") format('woff'),
+    url("../fonts/raleway/Raleway-Regular.woff2") format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url("../fonts/raleway/Raleway-ExtraLight.woff") format('woff'),
+    url("../fonts/raleway/Raleway-ExtraLight.woff2") format('woff2');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src:  url("../fonts/raleway/Raleway-Italic.woff") format('woff'),
+    url("../fonts/raleway/Raleway-Italic.woff2") format('woff2');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url("../fonts/raleway/Raleway-Medium.woff") format('woff'),
+    url("../fonts/raleway/Raleway-Medium.woff2") format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url("../fonts/raleway/Raleway-SemiBold.woff") format('woff'),
+    url("../fonts/raleway/Raleway-SemiBold.woff2") format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url("../fonts/raleway/Raleway-Bold.woff") format('woff'),
+    url("../fonts/raleway/Raleway-Bold.woff2") format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url("../fonts/raleway/Raleway-ExtraBold.woff") format('woff'),
+    url("../fonts/raleway/Raleway-ExtraBold.woff2") format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url("../fonts/raleway/Raleway-Black.woff") format('woff'),
+    url("../fonts/raleway/Raleway-Black.woff2") format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+div {
+    width: 100%;
+}
+
+.wrap {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 100%;
+    padding: 0 10px;
+    max-width: 1020px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2 {
+    font-size: 58px;
+    font-weight: 900;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+.title-white {
+    color: #ffffff;
+    font-weight: 900;
+}
+
+.text-orange {
+    color: #ff9303;
+    font-weight: 700;
+}
+
+input, select, button {
+    width: 100%;
+    display: block;
+}
+
+@media screen and (max-width: 568px) {
+    h1 {
+        font-size: 40px;
+    }
+}
