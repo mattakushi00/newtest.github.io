@@ -1,0 +1,46 @@
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .text-orange {
+        color: #FFA100;
+    }
+
+    .text-fire {
+        color: #FFA100;
+        background: none;
+    }
+
+    .order-logo {
+        background: linear-gradient(135deg, #FF0E1B, #FFA100);
+    }
+
+    .listBottom-item {
+        background: linear-gradient(135deg, #FF0E1B, #FFA100);
+    }
+
+    .border-gradient {
+        background: linear-gradient(135deg, #FF0E1B, #FFA100);
+    }
+
+    .order-right.border-gradient {
+        background: linear-gradient(315deg, #FF0E1B, #FFA100);
+    }
+
+    .form-title_red {
+        color: #FF0E1B;
+    }
+
+    .new-price {
+        color: #FFA100;
+    }
+
+    .form-btn {
+        background: linear-gradient(#FF0E1B, #FFA100);
+    }
+
+    .sick-item {
+        background: linear-gradient(to right, #FF0E1B, #FFA100);
+    }
+
+    .healItem_bgYellow {
+        background: radial-gradient(circle farthest-side at 30px 20px, #FFE600, #FFA100);
+    }
+}

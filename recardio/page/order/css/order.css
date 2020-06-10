@@ -3,6 +3,7 @@
     background: url("../img/order-bg.png") no-repeat center;
     background-size: cover;
     position: relative;
+    overflow: hidden;
 }
 
 .order-left {
@@ -22,12 +23,20 @@
 
 .order-logo {
     display: block;
-    max-width: 100px;
-    padding: 8px 9px;
-    background: linear-gradient(135deg, #ff0b1c, #ff9902);
+    max-width: 110px;
+    font-size: 18px;
+    padding: 8px 0;
+    text-align: center;
+    background: linear-gradient(135deg, var(--red), var(--orange));
     text-transform: uppercase;
     color: #ffffff;
     font-weight: 600;
+    transform: scale(1);
+    transition: transform 0.1s ease-in-out;
+}
+
+.order-logo:hover {
+    transform: scale(1.05);
 }
 
 .order-title {
@@ -46,15 +55,22 @@
     margin-bottom: 17px;
     background-color: #f7f7f7;
     padding: 10px 17px 10px 13px;
+    transform: scale(1);
+    transition: transform 0.1s ease-in-out;
+}
 
+.listTop-item:hover {
+    transform: scale(1.05);
 }
 
 .listTop-img {
     margin-right: 15px;
+    max-width: 41px;
 }
 
 .listTop-text {
     font-weight: 500;
+    font-size: 20px;
 }
 
 .listBottom {
@@ -65,13 +81,19 @@
 }
 
 .listBottom-item {
-    background: linear-gradient(135deg, #ff0e1b, #ffa100);
+    background: linear-gradient(135deg, var(--red), var(--orange));
     padding: 10px 12px;
     margin-right: 12px;
     margin-bottom: 10px;
     display: flex;
     align-items: flex-start;
     max-width: 125px;
+    transform: scale(1);
+    transition: transform 0.1s ease-in-out;
+}
+
+.listBottom-item:hover {
+    transform: scale(1.05);
 }
 
 .listBottom-item_long {
@@ -80,6 +102,7 @@
 
 .listBottom-img {
     margin-right: 9px;
+    max-width: 16px;
 }
 
 .listBottom-text {
@@ -93,14 +116,14 @@
 }
 
 .border-gradient {
-    background: linear-gradient(135deg, #ff0e1b, #ffa100);
+    background: linear-gradient(315deg, var(--red), var(--orange));
     padding: 3px;
     position: relative;
     z-index: 2;
 }
 
 .order-right.border-gradient {
-    background: linear-gradient(315deg, #ff0e1b, #ffa100);
+    background: linear-gradient(315deg, var(--red), var(--orange));
 }
 
 .border-gradient_radius {
@@ -110,16 +133,24 @@
 .order-form {
     background-color: #ffffff;
     padding: 25px 15px 15px;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    transform: scale(1);
+    transition: box-shadow, transform 0.2s ease-in-out;
+}
+
+.order-form:hover {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    transform: scale(1.03);
 }
 
 .form-title {
     font-size: 25px;
-    font-weight: 800;
+    font-weight: 900;
     text-align: center;
 }
 
 .form-title_red {
-    color: #ff0e1b;
+    color: var(--red);
 }
 
 .form-price {
@@ -140,7 +171,7 @@
 .new-price {
     font-size: 39px;
     font-weight: 800;
-    color: #ffa200;
+    color: var(--orange);
 }
 
 .form-timer {
@@ -150,6 +181,7 @@
 .timer-title {
     text-align: center;
     font-weight: 700;
+    font-size: 16px;
 }
 
 .timerBlock {
@@ -171,6 +203,7 @@
     border-radius: 10px;
     font-size: 34px;
     font-weight: 500;
+    padding: 5px 0;
 }
 
 .timer-subtext {
@@ -190,6 +223,7 @@
     display: block;
     margin: 7px 0;
     font-size: 17px;
+    padding-left: 15px;
 }
 
 .input-item {
@@ -205,10 +239,19 @@
 }
 
 .form-btn {
-    background: linear-gradient(#ff0e1b, #ffa100);
+    background: linear-gradient(var(--red), var(--orange));
     font-size: 17px;
     font-weight: 700;
     color: #ffffff;
+    margin-bottom: 0;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+    transform: scale(1);
+    transition: box-shadow, transform 0.2s ease-in-out;
+}
+
+.form-btn:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.02)
 }
 
 .order-product {
@@ -279,8 +322,18 @@
 }
 
 @media screen and (max-width: 568px) {
+
+    .order {
+        padding: 20px 0;
+    }
+
+    .order-title {
+        margin: 15px 0;
+    }
+
     .order-product {
         order: 2;
+        max-width: 250px;
     }
 
     .order-right .border-gradient {
@@ -299,3 +352,4 @@
     }
 
 }
+

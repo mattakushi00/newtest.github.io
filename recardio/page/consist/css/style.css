@@ -1,0 +1,136 @@
+.consist {
+    background: url("../img/consist-bg.png") no-repeat center;
+    padding: 70px 0;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.consist:before {
+    content: '';
+    display: block;
+    background: url("../../order/img/product.png") no-repeat center;
+    position: absolute;
+    top: 0;
+    bottom: -130px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 380px;
+    width: 100%;
+}
+
+.consistItem-title,
+.consistItem-text,
+.consist-title {
+    color: #ffffff;
+}
+
+.consist-title {
+     text-align: center;
+     margin-bottom: 50px;
+ }
+
+.consist-title span {
+    font-weight: 900;
+}
+
+.consist-list .row {
+    justify-content: space-between;
+}
+
+.consist-item {
+    flex: 1 0 260px;
+    max-width: 290px;
+    margin-bottom: 50px;
+}
+
+.consistItem-head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.consistItem-head_odd {
+    justify-content: flex-end;
+}
+
+.consist-img {
+    max-width: 100px;
+    flex: 1 0 100px;
+}
+
+.consist-img_odd {
+    order: 2;
+}
+
+.consistItem-title {
+    margin-left: 20px;
+    margin-right: 0;
+    order: 1;
+    flex-shrink: 1;
+    font-weight: 800;
+}
+
+.consistItem-title_odd {
+    margin-left: 0;
+    margin-right: 20px;
+    text-align: right;
+    order: 2;
+}
+
+.consistItem-text_odd {
+    text-align: right;
+}
+
+@media screen and (max-width: 991px) {
+    .consist:before {
+        display: none;
+    }
+
+    .consist-list .row {
+        justify-content: center;
+    }
+
+    .consist-item {
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .consist {
+        padding: 20px 0;
+    }
+
+    .consist-list .row {
+        flex-wrap: wrap;
+    }
+
+    .consist-title {
+        margin-bottom: 10px;
+    }
+
+    .consistItem-head {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .consistItem-title {
+        text-align: center;
+        margin: 10px 0 0;
+    }
+    
+    .consistItem-text {
+        text-align: center;
+    }
+
+    .consist-item {
+        margin-bottom: 20px;
+    }
+
+    .consist-img {
+        order: 1;
+    }
+}

@@ -5,8 +5,16 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Recardio</title>
+  <link rel="stylesheet" href="common/css/forIE.css">
   <link rel="stylesheet" href="common/css/style.css">
   <link rel="stylesheet" href="page/order/css/order.css">
+  <link rel="stylesheet" href="page/sick/css/style.css">
+  <link rel="stylesheet" href="page/heal/css/style.css">
+  <link rel="stylesheet" href="page/safe/css/style.css">
+  <link rel="stylesheet" href="page/consist/css/style.css">
+  <link rel="stylesheet" href="page/spec/css/style.css">
+  <link rel="stylesheet" href="page/comm/css/style.css">
+  <link rel="stylesheet" href="common/css/animation.css">
 </head>
 <body>
 <div class="wrap">
@@ -20,15 +28,15 @@
           <ul class="listTop">
             <li class="listTop-item">
               <img class="listTop-img" src="page/order/img/listTop-1.png" alt="">
-              <p class="listTop-text"><span class="text-orange">Стабилизирует</span> <br> давление</p>
+              <p class="listTop-text"><span class="text-orange">Стабилизирует</span> давление</p>
             </li>
             <li class="listTop-item">
               <img class="listTop-img" src="page/order/img/listTop-2.png" alt="">
-              <p class="listTop-text"><span class="text-orange">Избавляет</span> от <br> головных болей</p>
+              <p class="listTop-text"><span class="text-orange">Избавляет</span> от головных болей</p>
             </li>
             <li class="listTop-item">
               <img class="listTop-img" src="page/order/img/listTop-3.png" alt="">
-              <p class="listTop-text"><span class="text-orange">Улучшает</span> <br> самочувствие</p>
+              <p class="listTop-text"><span class="text-orange">Улучшает</span> самочувствие</p>
             </li>
           </ul>
 
@@ -53,11 +61,11 @@
         <img class="order-product" src="page/order/img/product.png" alt="">
 
         <div class="border-gradient">
-          <form action="" class="order-form">
+          <form action="" method="post" class="order-form order_form">
             <h3 class="form-title">Закажите <br> со скидкой <br> <span class="form-title_red">прямо сейчас</span></h3>
 
             <div class="form-price">
-              <span class="old-price">990 rub</span> <span class="new-price">99 rub</span>
+              <span class="old-price price_old">990 rub</span> <span class="new-price price_main">99 rub</span>
             </div>
 
             <div class="form-timer">
@@ -71,7 +79,7 @@
                 </div>
                 <div class="timer-item">
                   <div class="border-gradient border-gradient_radius">
-                    <span class="timer-count timer-minutes">15</span>
+                    <span class="timer-count timer-minutes">20</span>
                   </div>
                   <span class="timer-subtext">минут</span>
                 </div>
@@ -85,11 +93,16 @@
             </div>
 
             <div class="form-inputs">
-              <span class="inputs-text">Страна</span> <select class="input-item input-item_gray" name="" id="country">
-              <option value="">Россия</option>
-            </select> <span class="inputs-text">Ваше имя</span> <input type="text" class="input-item">
-              <span class="inputs-text">Телефон</span> <input type="text" class="input-item">
-              <button class="input-item form-btn">Купить со скидкой</button>
+              <span class="inputs-text">Страна</span>
+              <select class="input-item input-item_gray country_select" name="country">
+                <option value=""></option>
+              </select>
+              <span class="inputs-text">Ваше имя</span>
+              <input type="text" class="input-item" name="name" value="" placeholder="Name, Surname">
+              <span class="inputs-text">Телефон</span>
+              <input type="text" class="input-item" name="phone" value="" placeholder="Phone number">
+              <input type="hidden" name="landing" value="">
+              <button class="input-item form-btn" type="submit">Купить со скидкой</button>
             </div>
           </form>
         </div>
@@ -97,6 +110,313 @@
     </div>
   </header>
 
+  <section class="sick">
+    <div class="sick-header">
+      <h2 class="sick-title">Гипертония не убивает
+        <br><span class="text-fire">— она приводит к смертельным болезням!</span></h2>
+      <p class="sick-subTitle">Игнорировать повышенное давление – значит играть со смертью: <span class="text-red">рано или поздно вы проиграете.</span></p>
+    </div>
+    <div class="container">
+      <div class="sick-items">
+        <div class="sick-item">
+          <div class="text-wrap">
+            <div class="sickItem-text">
+              <h3 class="sickItem-title">Инсульт</h3>
+              <p class="sickItem-subText">Острое нарушение мозгового кровообращения, которое приводит к повреждению и отмиранию нейронов головного мозга. В зависимости от степени тяжести приводит человека к полному параличу, потере речи, инвалидности и смерти.</p>
+            </div>
+          </div>
+          <div class="sickItem-img">
+            <img src="page/sick/img/sick-img1.png" alt="" class="sick-img">
+          </div>
+        </div>
+
+        <div class="sick-item">
+          <div class="sickItem-img">
+            <img src="page/sick/img/sick-img2.png" alt="" class="sick-img">
+          </div>
+          <div class="text-wrap sickItem-text_bgWhite">
+            <div class="sickItem-text">
+              <h3 class="sickItem-title">Атеросклероз</h3>
+              <p class="sickItem-subText">На стенках сосудов откладываются холестериновые бляшки, жиры в виде налета. Из-за этого стенки сосудов уплотняются и теряют эластичность. Просвет артерии сужается, затрудняется ток крови. Из-за этого сердечная мышца недополучает кислород, сердце усиливает свою работу, компенсируя его дефицит. Это приводит к развитию нарушений сердечного ритма, стенокардии, инфаркту миокарда и внезапной остановке сердца.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="sick-item">
+          <div class="text-wrap">
+            <div class="sickItem-text">
+              <h3 class="sickItem-title ">Инфаркт миокарда</h3>
+              <p class="sickItem-subText">Серьезное и смертельно опасное патологическое состояние, при котором происходит нарушение кровотока в сосудах, питающих сердечную мышцу из-за резкого спазма или закупорки сосудов кровяным сгустком или скоплением холестерина. От недостатка кислорода участок сердечной мышцы начинает умирать. Шанс выжить – критически низкий.</p>
+            </div>
+          </div>
+          <div class="sickItem-img">
+            <img src="page/sick/img/sick-img3.png" alt="" class="sick-img">
+          </div>
+        </div>
+
+        <div class="sick-item">
+          <div class="sickItem-img">
+            <img src="page/sick/img/sick-img4.png" alt="" class="sick-img">
+          </div>
+          <div class="text-wrap sickItem-text_bgWhite">
+            <div class="sickItem-text">
+              <h3 class="sickItem-title">Почечная недостаточность</h3>
+              <p class="sickItem-subText">Нарушение функции почек, которое возникает по причине гибели нефронов (клеток почек) и замещения их соединительной тканью. Приводит к расстройству водного, электролитного, азотистого и других видов обмена. В тяжелых случаях – к отказу работы почек.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="heal">
+    <div class="container">
+      <h2 class="heal-title">Отбросьте предрассудки. <span class="text-red">Гипертония лечится!</span></h2>
+      <p class="heal-text heal-text_bgWhite">Если полностью вылечить гипертонию нельзя, то можно добиться пожизненной ремиссии – привести организм в состояние, когда болезнь не ощущается и не влияет на здоровье. Это доказано институтом кардиологии США на примере более полумиллиона американцев, победивших болезнь с помощью ReCardio.</p>
+      <p class="heal-text">
+        <span class="text-red">Вплоть до 2019 года гипертоническая болезнь считалась самой опасной для сердечно-сосудистой системы.</span> Таблетки помогали смягчить ее симптомы, но они могли вернуться в любой момент.
+      </p>
+      <div class="heal-items">
+        <div class="healItem healItem_bgYellow">
+          <h3 class="healItem-title">Другой <br> подход – другие результаты</h3>
+          <p class="healItem-text">
+            <span class="text-bold">В 2019 был выпущен препарат, который разрабатывался более 10 лет лучшими американскими кардиологами.</span> Работа над ним была в строжайшей секретности. Только после сотен успешных испытаний препарат представили миру как новое слово в кардиологии.
+          </p>
+        </div>
+        <div class="healItem healItem_bgCoral">
+          <h3 class="healItem-title">Рекардио изменил медицину</h3>
+          <p class="healItem-text"><span class="text-bold">Запатентованная формула препарата доказала свою эффективность не только в испытаниях, но и на практике.</span> Пациенты, прошедшие лечение с Рекардио, избавились не только от высокого давления и его последствий. Они получили право на здоровую жизнь без побочных эффектов.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="safe">
+    <div class="container">
+      <h2 class="safe-title">ReCardio спас <span class="text-red">уже более 1 млн населения планеты</span></h2>
+      <p class="safe-text">После внедрения ReCardio в медицинскую практику, количество инфарктов и инсультов на фоне гипертонии сократилось на 37%. </p>
+      <div class="safe-items">
+        <p class="safeItems-title">При курсовом приеме ReCardio кроме стабилизации давления проходят сопутствующие симптомы болезни:</p>
+        <div class="safe-list">
+          <div class="safe-item animation-shifting">
+            <img src="page/safe/img/safe-item1.png" alt="" class="safeItem-img">
+            <p class="safeItem-text">Нарушение сердечного ритма</p>
+          </div>
+          <div class="safe-item animation-shifting2">
+            <img src="page/safe/img/safe-item2.png" alt="" class="safeItem-img">
+            <p class="safeItem-text">Скачки давления</p>
+          </div>
+          <div class="safe-item animation-shifting3">
+            <img src="page/safe/img/safe-item3.png" alt="" class="safeItem-img">
+            <p class="safeItem-text">Синдром хронической усталости</p>
+          </div>
+          <div class="safe-item animation-shifting4">
+            <img src="page/safe/img/safe-item4.png" alt="" class="safeItem-img">
+            <p class="safeItem-text">Головные боли</p>
+          </div>
+          <div class="safe-item animation-shifting5">
+            <img src="page/safe/img/safe-item5.png" alt="" class="safeItem-img">
+            <p class="safeItem-text">Отечность, потливость</p>
+          </div>
+          <div class="safe-item animation-shifting6">
+            <img src="page/safe/img/safe-item6.png" alt="" class="safeItem-img">
+            <p class="safeItem-text">Метеозависимость</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="consist">
+    <div class="container">
+      <h2 class="consist-title">И все это благодаря <span class="text-orange">специальному составу:</span></h2>
+      <div class="consist-list">
+        <div class="row">
+          <div class="consist-item">
+            <div class="consistItem-head consistItem-head_odd">
+              <h4 class="consistItem-title consistItem-title_odd">Экстракт крапивы</h4>
+              <img src="page/consist/img/consist-item1.png" alt="" class="consist-img consist-img_odd">
+            </div>
+            <p class="consistItem-text consistItem-text_odd">Увеличивает эластичность капилляров, улучшает приток крови к мозгу, стабилизирует работу сердца. Увеличивает сократимость миокарда. Усиливает обменные процессы, расширяя сосуды.</p>
+          </div>
+          <div class="consist-item">
+            <div class="consistItem-head">
+              <img src="page/consist/img/consist-item2.png" alt="" class="consist-img">
+              <h4 class="consistItem-title">Экстракт боярышника</h4>
+            </div>
+            <p class="consistItem-text">Снижает уровень артериального давления при одновременном повышении антиоксидантной защиты сердца. Расслабляет мышцы кровеносных сосудов и помогает им расширяться. Выступает блокатором кальциевых каналов, расслабляющих сердце, уменьшая силу сокращений.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="consist-item">
+            <div class="consistItem-head consistItem-head_odd">
+              <h4 class="consistItem-title consistItem-title_odd">Экстракт пустырника</h4>
+              <img src="page/consist/img/consist-item3.png" alt="" class="consist-img consist-img_odd">
+            </div>
+            <p class="consistItem-text consistItem-text_odd">Выравнивает ритм сердца и поддерживает в норме артериальное давление. Укрепляет нервную систему. Устраняет головную боль, боли в груди. Снижает риск развития инфаркта.</p>
+          </div>
+          <div class="consist-item">
+            <div class="consistItem-head">
+              <img src="page/consist/img/consist-item4.png" alt="" class="consist-img">
+              <h4 class="consistItem-title">Витамины группы B</h4>
+            </div>
+            <p class="consistItem-text">Оказывают благоприятное воздействие на сердце, незаменимы при дистрофии сердечной мышцы, при спазмах перифери- ческих сосудов. Снижают холестерин в сыворотке крови, предотвращают развитие атеросклероза.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="spec">
+    <div class="container spec-block">
+      <div class="spec-content">
+        <h2 class="spec-title">Комментарий <span class="text-blue">специалиста</span></h2>
+        <p class="spec-text">Гипертония сковывает руки. При повышенном давлении вам приходится 10 раз подумать, прежде чем совершить желаемое. Это касается всего: от наслаждения любимым блюдом до энергичной прогулки в парке.</p>
+        <p class="spec-text">Имея гипертонию, любая деятельность может иметь если не летальный исход, то обострение симптомов. Это подтверждает опыт моих многочисленных пациентов.</p>
+        <p class="spec-text">Как врач, я искренне рад такому событию в кардиологии, как выпуск ReCardio. Это по-настоящему новый препарат, который не только купирует симптомы и устраняет последствия болезни – Recardio возвращает гипертоников к полноценной жизни.</p>
+        <div class="spec-footer">
+          <img class="sign" src="page/spec/img/sign.png" alt="">
+          <p class="spec-prof">
+            <span class="prof text-blue">Марк Найон,</span> <br> д.м.н., профессор, кардиолог
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="comm">
+    <div class="container">
+      <h2 class="comm-title">Отзывы</h2>
+
+      <div class="comm-list">
+        <div class="commList-col">
+          <div class="commList-item commList-item-1">
+            <h4 class="commItem-title"><span class="text-bold">Галина Данилова</span>, 52 года</h4>
+            <p class="commItem-text">Я гипертоник со стажем, давление скачет с 30 лет. Сейчас мне 52, с таблеток не слезала последние лет 10. Было два гипертонических криза и один инфаркт. Чудом нашла Recardio, начала принимать без разрешения врача. За один курс состояние значительно улучшилось. Перестала кружиться голова, ушла тахикардия, пропал шум в ушах, который постоянно меня преследовал. Сейчас давление стабильное, выше 130/82 не поднимается уже полгода.</p>
+            <img src="page/comm/img/stars.png" alt="" class="comm-star">
+          </div>
+
+          <div class="commList-item commList-item-3">
+            <h4 class="commItem-title"><span class="text-bold">Антонина Измайлова</span>, 84 года</h4>
+            <p class="commItem-text">Я привыкла жить с повышенным давлением с юности, бывало, что скакало до 150, когда мне было едва за двадцать. К юбилею 80-тилетия пила таблетки уже почти полвека. Ко всему привыкаешь, даже к изматывающей головной боли. Попала на приём к молодому врачу, он настоял, что вылечиться можно даже хронику с таким стажем. Помог скорректировать питание, прописал ежедневные прогулки. И два курса Recardio на полгода. Вот он-то мне и помог! И мои постоянные спутники – головные боли и отдышка – ушли полностью! Препараты, которые пила много лет, полностью отменять не стали, дозировку скорректировали. Раньше после четырёх дня только лежала, сил не было, а сейчас могу за внуками присматривать. Жизнь изменилась.</p>
+            <img src="page/comm/img/stars.png" alt="" class="comm-star">
+          </div>
+        </div>
+
+        <div class="commList-col">
+
+          <div class="commList-item commList-item-2">
+            <h4 class="commItem-title"><span class="text-bold">Григорий Верба</span>, 56 лет</h4>
+            <p class="commItem-text">Мне поставили диагноз гипертония три года назад. Подумал, что в этот день я сразу стал стариком. Давление повышалось и раньше, гипертонический криз впервые. Два следующих года скупал пол аптеки каждый месяц, таблетки по часам, ограничений целый список. Чтобы успокоиться, надо постоянно видеть цифры давления. Здоровым тогда себя не чувствовал ни дня. Спасибо жене, не опустила руки и постоянно искала врачей, читала, сама врачом теперь стать сможет. Нашла препарат рекардио, который спас меня. Всем советую: не запускайте болезнь! </p>
+            <img src="page/comm/img/stars.png" alt="" class="comm-star">
+          </div>
+
+          <div class="commList-item commList-item-4">
+            <h4 class="commItem-title"><span class="text-bold">Илья Зверев</span>, 61 год</h4>
+            <p class="commItem-text">После второго шунтирования коронарной артерии на фоне инфаркта пришло осознание, что третий инфаркт может стать последним в жизни. Ограничил себя, в чем мог, но полностью следовать запретам врача было сложно. В этом плане Recardio очень помог. Снизился аппетит, вес потихоньку снижался. По ощущениям стало гораздо лучше. Проверил холестерин – в норме, хотя всегда был повышенным. Давление выровнялось, сопутствующие неприятности гипертонии сошли на нет. Очень доволен этим препаратом, вернул меня к нормальной жизни.</p>
+            <img src="page/comm/img/stars.png" alt="" class="comm-star">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="order">
+    <div class="container">
+
+      <div class="order-left">
+        <span class="order-logo">ReCardio</span>
+        <h1 class="order-title"><span class="title-white">Полное избавление</span> <br> от гипертонии</h1>
+        <div class="order-list">
+          <ul class="listTop">
+            <li class="listTop-item">
+              <img class="listTop-img" src="page/order/img/listTop-1.png" alt="">
+              <p class="listTop-text"><span class="text-orange">Стабилизирует</span> давление</p>
+            </li>
+            <li class="listTop-item">
+              <img class="listTop-img" src="page/order/img/listTop-2.png" alt="">
+              <p class="listTop-text"><span class="text-orange">Избавляет</span> от головных болей</p>
+            </li>
+            <li class="listTop-item">
+              <img class="listTop-img" src="page/order/img/listTop-3.png" alt="">
+              <p class="listTop-text"><span class="text-orange">Улучшает</span> самочувствие</p>
+            </li>
+          </ul>
+
+          <ul class="listBottom">
+            <li class="listBottom-item listBottom-item_long">
+              <img class="listBottom-img" src="page/order/img/listBottomCheck.png" alt="">
+              <p class="listBottom-text">Лучшее <br> средство от <br> гипертонии</p>
+            </li>
+            <li class="listBottom-item">
+              <img class="listBottom-img" src="page/order/img/listBottomCheck.png" alt="">
+              <p class="listBottom-text">Запатен - <br>тованная <br>формула</p>
+            </li>
+            <li class="listBottom-item">
+              <img class="listBottom-img" src="page/order/img/listBottomCheck.png" alt="">
+              <p class="listBottom-text">Товар <br>года <br>2020</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="order-right">
+        <img class="order-product" src="page/order/img/product.png" alt="">
+
+        <div class="border-gradient">
+          <form action="" method="post" class="order-form order_form">
+            <h3 class="form-title">Закажите <br> со скидкой <br> <span class="form-title_red">прямо сейчас</span></h3>
+
+            <div class="form-price">
+              <span class="old-price price_old">990 rub</span> <span class="new-price price_main">99 rub</span>
+            </div>
+
+            <div class="form-timer">
+              <h4 class="timer-title">До конца акции осталось:</h4>
+              <div class="timerBlock">
+                <div class="timer-item">
+                  <div class="border-gradient border-gradient_radius">
+                    <span class="timer-count timer-hours">00</span>
+                  </div>
+                  <span class="timer-subtext">часов</span>
+                </div>
+                <div class="timer-item">
+                  <div class="border-gradient border-gradient_radius">
+                    <span class="timer-count timer-minutes">20</span>
+                  </div>
+                  <span class="timer-subtext">минут</span>
+                </div>
+                <div class="timer-item">
+                  <div class="border-gradient border-gradient_radius">
+                    <span class="timer-count timer-seconds">00</span>
+                  </div>
+                  <span class="timer-subtext">секунд</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-inputs">
+              <span class="inputs-text">Страна</span>
+              <select class="input-item input-item_gray country_select" name="country">
+                <option value=""></option>
+              </select>
+              <span class="inputs-text">Ваше имя</span>
+              <input type="text" class="input-item" name="name" value="" placeholder="Name, Surname">
+              <span class="inputs-text">Телефон</span>
+              <input type="text" class="input-item" name="phone" value="" placeholder="Phone number">
+              <input type="hidden" name="landing" value="">
+              <button class="input-item form-btn" type="submit">Купить со скидкой</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
 </div>
+
+<script src="common/js/timer.js"></script>
+<script src="common/js/animation.js"></script>
 </body>
 </html>
