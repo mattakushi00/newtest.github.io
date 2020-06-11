@@ -80,6 +80,10 @@
     .sick {
         padding-bottom: 20px;
     }
+
+    .sick-item {
+        background: linear-gradient(100deg, var(--red) 70%, var(--orange));;
+    }
     
     .sickItem-text {
         padding: 10px;

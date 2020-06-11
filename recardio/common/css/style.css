@@ -177,9 +177,15 @@ input, select, button {
     }
 }
 
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 768px) {
     h1, h2 {
-        font-size: 34px;
+        font-size: 42px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    h1, h2 {
+        font-size: 32px;
     }
 }
 

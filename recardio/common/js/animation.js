@@ -2,7 +2,7 @@
     for (var i = 0; i < animation.arguments.length; i++) {
         animation.arguments[i][0].style.opacity = '0';
     }
-    order[1].style.opacity = '0';
+   /* order[1].style.opacity = '0';*/
 
     hide('sick-item');
     hide('consist-item');
@@ -23,8 +23,8 @@
         simpleAnimation('consist-title', 'animation-fadeIn',0);
         simpleAnimation('spec-title', 'animation-fadeIn',0);
         simpleAnimation('comm-title', 'animation-fadeIn',0);
-        simpleAnimation('order-product', 'animation-fadeIn',1);
-        simpleAnimation('order-product', 'animation-fadeIn', 1)
+        /*simpleAnimation('order-product', 'animation-fadeIn',1);
+        simpleAnimation('order-product', 'animation-fadeIn', 1)*/
     }, false);
 
 
@@ -77,4 +77,5 @@
     document.getElementsByClassName('consist-title'),
     document.getElementsByClassName('spec-title'),
     document.getElementsByClassName('comm-title'),
-    document.getElementsByClassName('order-product'));
+    document.getElementsByClassName('order-product')
+);
