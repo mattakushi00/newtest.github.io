@@ -194,6 +194,7 @@ select {
 
 .text-fire {
     background: linear-gradient(91deg, var(--red), var(--orange));
+    -webkit-background: linear-gradient(91deg, var(--red), var(--orange));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
