@@ -22,6 +22,12 @@
     margin-bottom: 40px;
 }
 
+@media all and (-webkit-min-device-pixel-ratio:0) {
+    .sick-title span.text-fire {
+        color: #FFA100;
+    }
+}
+
 .sick-subTitle {
     display: block;
     max-width: 340px;
