@@ -5,8 +5,164 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="wrapper">
+  <header>
+    <div class="container order">
+      <div class="order-left">
+        <div class="titleBlock">
+          <h1 class="order-title">Dr. Derm</h1>
+          <span class="order-subTitle">здоровая кожа без проблем</span>
+        </div>
 
+        <div class="order-info">
+          <ul class="order-list">
+            <li class="orderList-item">
+              <img class="orderList-img" src="img/order-check.png">
+              <p class="orderList-text">Быстро <span class="text-black">убирает зуд</span> и шелушение</p>
+            </li>
+            <li class="orderList-item">
+              <img class="orderList-img" src="img/order-check.png">
+              <p class="orderList-text"><span class="text-black">Заживляет</span> псориатические бляшки</p>
+            </li>
+            <li class="orderList-item">
+              <img class="orderList-img" src="img/order-check.png">
+              <p class="orderList-text">Устраняет <span class="text-black">причины псориаза</span></p>
+            </li>
+            <li class="orderList-item">
+              <img class="orderList-img" src="img/order-check.png">
+              <p class="orderList-text"><span class="text-black">Предотвращает распространение</span> болезни</p>
+            </li>
+          </ul>
+          <div class="order-prices">
+            <div class="newPrice">
+              <span class="newPrices-text">новая цена:</span> <span class="newPrices-price">990 руб</span>
+            </div>
+            <span class="oldPrice">старая цена 1980 руб</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="order-right">
+        <div class="formBlock">
+          <h2 class="formBlock-title">Только сегодня!</h2>
+          <h3 class="formBlock-sale">скидка -50%
+            <br>
+            <span class="formBlock-sale__small">при заказе</span></h3>
+          <form action="" class="order-form">
+            <label class="form-label">
+              <span class="label-text">Страна</span>
+              <select id="country">
+                <option value="">Россия</option>
+              </select>
+            </label>
+            <label class="form-label">
+              <span class="label-text">Ф.И.О</span>
+              <input class="form-order" type="text">
+            </label>
+            <label class="form-label">
+              <span class="label-text">Телефон</span>
+              <input class="form-order" type="text">
+            </label>
+            <button class="order-btn">заказать сейчас</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="order-product">
+        <img src="img/product-order.png" class="product-img" alt="">
+      </div>
+    </div>
+  </header>
+
+  <section class="effects">
+    <div class="container">
+      <h2 class="effects-title"><span class="effects-title_black">Что происходит</span> с кожей при псориазе?</h2>
+      <div class="effects-texts">
+        <p class="effects-text effects-text_left">
+          <span class="text-darkGreen">Верхний слой кожи называется эпидермис.</span> Его основу составляют
+          <span class="text-darkGreen">кератиноциты, которые в среднем живут 28 дней.</span> При псориазе кератиноциты размножаются в несколько раз быстрее, не успевая созреть и состариться. Вместо 28 они живут всего 4-5 дней!
+        </p>
+        <p class="effects-text effects-text_right">
+          Воспаления провоцирует сбой в иммунной системе. Несозревшие кератиноциты не могут самостоятельно покинуть кожу.
+          <span class="text-darkGreen">Они накапливаются на поверхности, образуя псориатические бляшки.</span> Воспаление захватывает и дерму, поэтому в процесс вовлекаются потовые и сальные железы. Уменьшается их секреция, кожа лишается воды и жира, сохнет, трескается.
+        </p>
+      </div>
+      <div class="effects-imgBlock">
+        <div class="effects-img effects-img1">
+          <img src="img/effects-img1.png" alt="" class="img">
+        </div>
+        <div class="effects-img effects-img2 imgMiddle">
+          <span class="imgMiddle-item imgMiddle-item1">Epidermis</span>
+          <span class="imgMiddle-item imgMiddle-item2">dermis</span>
+          <span class="imgMiddle-item imgMiddle-item3">Hypodermis</span>
+          <span class="imgMiddle-item imgMiddle-item4">Muscle</span>
+        </div>
+        <div class="effects-img effects-img3">
+          <img src="img/effects-img3.png" alt="" class="img">
+        </div>
+      </div>
+      <p class="effects-footer">Процесс развития псориаза неконтролируемый. Даже зная о своей наследственности, люди не могут предупредить системное поражение кожи.</p>
+    </div>
+  </section>
+
+  <section class="exac">
+    <div class="container">
+      <h2 class="exac-title"><span class="text-darkGreen">К обострениям</span>
+        <br> псориаза
+        <br>приводят:</h2>
+
+      <ul class="exac-list">
+        <li class="exacList-item">
+          <img src="img/exac-list.png" alt="" class="ixac-img">
+          <span class="exac-text">стрессы;</span>
+        </li>
+        <li class="exacList-item">
+          <img src="img/exac-list.png" alt="" class="ixac-img">
+          <span class="exac-text">холодная и сухая погода;</span>
+        </li>
+        <li class="exacList-item">
+          <img src="img/exac-list.png" alt="" class="ixac-img">
+          <span class="exac-text">повреждения кожи;</span>
+        </li>
+        <li class="exacList-item">
+          <img src="img/exac-list.png" alt="" class="ixac-img">
+          <span class="exac-text">медикаменты;</span>
+        </li>
+        <li class="exacList-item">
+          <img src="img/exac-list.png" alt="" class="ixac-img">
+          <span class="exac-text">инфекции;</span>
+        </li>
+      </ul>
+    </div>
+    <img src="img/exac-hand.png" alt="" class="exac-hand">
+  </section>
+
+  <section class="mistakes">
+    <div class="container">
+      <h2 class="mistake-title"><span class="mistake-title_big">Ошибки</span> при лечении псориаза:</h2>
+      <ul class="mistakes-list">
+        <li class="mistakesList-item">
+          <img src="img/mistakes-img1.png" alt="" class="mistakes-img">
+          <h3 class="mistakesItem-title">Неправильный уход</h3>
+          <p class="mistakesItem-text">При псориазе кожа становится сухой и грубой, а роговой слой эпидермиса значительно утолщается. Откажитесь от питательных, увлажняющих и кремов с отдушками. Используйте специализированные средства, которые делают кожу более пластичной. Частое мытье рук, как и любые банные процедуры, сведите до минимума, так как истончается защитный слой, что приводит к еще большему распространению бляшек.</p>
+        </li>
+        <li class="mistakesList-item">
+          <img src="img/mistakes-img2.png" alt="" class="mistakes-img">
+          <h3 class="mistakesItem-title">Гормональная терапия</h3>
+          <p class="mistakesItem-text">Гормональная терапия развивает привыкание и не устраняет причины заболевания. Она помогает добиться косметического эффекта, сгладив папулы и покраснения. Пользуясь гормональными средствами, эпидермис истончается и теряет защитный слой, что может привести к раку кожи.</p>
+        </li>
+        <li class="mistakesList-item">
+          <img src="img/mistakes-img3.png" alt="" class="mistakes-img">
+          <h3 class="mistakesItem-title">Диета</h3>
+          <p class="mistakesItem-text">Профилактика развития псориаза предусматривает исключение из рациона продуктов, в составе которых присутствуют холестерин, углеводы, белки и жиры. Неправильно подобранная диета способна вызвать сильное обострение. При соблюдении питания с индивидуальным набором продуктов вместе с терапией, можно добиться ремиссии.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+</div>
+<script src="js/script.js"></script>
 </body>
 </html>
