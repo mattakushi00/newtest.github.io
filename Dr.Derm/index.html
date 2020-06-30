@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animation.css">
   <link rel="stylesheet" href="css/forIE.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div class="wrapper">
@@ -182,7 +184,9 @@
         <ul class="tiredList-right">
           <li class="tiredList-item tiredList-item6 animation-shifting6 tiredList-item_right">Сложно подобрать одежду?</li>
           <li class="tiredList-item tiredList-item7 animation-shifting1 tiredList-item_right">Люди боятся, что это заразно и сторонятся?</li>
-          <li class="tiredList-item tiredList-item8 animation-shifting2 tiredList-item_right">От увлажнения воздуха <br> нет толка?</li>
+          <li class="tiredList-item tiredList-item8 animation-shifting2 tiredList-item_right">От увлажнения воздуха
+            <br> нет толка?
+          </li>
           <li class="tiredList-item tiredList-item9 animation-shifting3 tiredList-item_right">Все больше замыкаетесь в себе?</li>
           <li class="tiredList-item tiredList-item10 tiredList-item_right">Кажется перепробовали
             <br> уже все от псориаза,
@@ -339,7 +343,8 @@
             <h3 class="alarm-title">ПОЖАЛУЙСТА, <br><span class="alarm-red">ОБРАТИТЕ ВНИМАНИЕ!</span></h3>
           </div>
           <div class="alarm-right">
-            <p class="alarm-text">Количество упаковок с Dr. Derm, необходимое для желаемого результата, <span class="alarm-bold">определяется индивидуально и в отдельных случаях может увеличиться.</span></p>
+            <p class="alarm-text">Количество упаковок с Dr. Derm, необходимое для желаемого результата,
+              <span class="alarm-bold">определяется индивидуально и в отдельных случаях может увеличиться.</span></p>
           </div>
         </div>
       </div>
@@ -377,24 +382,56 @@
   <section class="comment">
     <div class="container">
       <h2 class="comment-title">Отзывы о креме Dr.Derm</h2>
-      <div class="comment-block">
-        <h3 class="commentBlock-title">Anna Brut, 31 год</h3>
-        <div class="commentBlock-main">
-          <img src="img/comment-avatar.png" alt="" class="comment-avatar">
-          <p class="comment-text">Самое ужасное в псориазе – то, что он морально подавляет. Бляшки шелушатся, чешутся, разрастаются, так на тебя еще все смотрят с брезгливостью. Я устала от реакции людей. Про одежду я вообще молчу, только натуральные ткани и свободный стиль. Самый ужас был, когда псориаз начался на голове. Невозможно жить с этим. Меня ждала бы депрессия, если бы не опробовала Dr.Derm. То что он сотворил с моей кожей – чудо. Это единственное средство, которое помогло мне надолго. Я наконец-то стала чувствовать себя полноценным человеком. Спасибо вам!</p>
+      <div class="slider">
+        <div class="comment-block">
+          <h3 class="commentBlock-title">Anna Brut, 31 год</h3>
+          <div class="commentBlock-main">
+            <img src="img/comment-avatar.png" alt="" class="comment-avatar">
+            <p class="comment-text">Самое ужасное в псориазе – то, что он морально подавляет. Бляшки шелушатся, чешутся, разрастаются, так на тебя еще все смотрят с брезгливостью. Я устала от реакции людей. Про одежду я вообще молчу, только натуральные ткани и свободный стиль. Самый ужас был, когда псориаз начался на голове. Невозможно жить с этим. Меня ждала бы депрессия, если бы не опробовала Dr.Derm. То что он сотворил с моей кожей – чудо. Это единственное средство, которое помогло мне надолго. Я наконец-то стала чувствовать себя полноценным человеком. Спасибо вам!</p>
+          </div>
+
+          <div class="comment-arrows">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-left" class="svg-inline--fa fa-caret-left fa-w-6" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512">
+              <path fill="currentColor" d="M192 127.338v257.324c0 17.818-21.543 26.741-34.142 14.142L29.196 270.142c-7.81-7.81-7.81-20.474 0-28.284l128.662-128.662c12.599-12.6 34.142-3.676 34.142 14.142z"></path>
+            </svg>
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" class="svg-inline--fa fa-caret-right fa-w-6" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512">
+              <path fill="currentColor" d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path>
+            </svg>
+          </div>
         </div>
-        <div class="comment-dots">
-          <div class="comment-dot"></div>
-          <div class="comment-dot comment-dot_active"></div>
-          <div class="comment-dot"></div>
+
+        <div class="comment-block">
+          <h3 class="commentBlock-title">Liza Hall, 40 лет</h3>
+          <div class="commentBlock-main">
+            <img src="img/comment-avatar2.png" alt="" class="comment-avatar">
+            <p class="comment-text">Из-за псориаза я стала настоящим отшельником. В периоды обострения даже не выходила на улицу. Перепробовала всё что можно: мази, кремы, обёртывания, солевые процедуры, ездила на восстановительные курорты. Они помогали, только недолго. Всё время думала, что сложные болезни лечат, а от псориаза почему не могут придумать лекарство? И, кажется, мои молитвы были услышаны. Когда в руки мне попал Dr.Derm, то я не возлагала на него надежд. А этот "очередной крем" помог мне! Через три недели пятна посветлели, сухость ушла, через месяц с небольшим – прошли полностью. Уже полгода у меня чистая кожа!</p>
+          </div>
+
+          <div class="comment-arrows">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-left" class="svg-inline--fa fa-caret-left fa-w-6" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512">
+              <path fill="currentColor" d="M192 127.338v257.324c0 17.818-21.543 26.741-34.142 14.142L29.196 270.142c-7.81-7.81-7.81-20.474 0-28.284l128.662-128.662c12.599-12.6 34.142-3.676 34.142 14.142z"></path>
+            </svg>
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" class="svg-inline--fa fa-caret-right fa-w-6" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512">
+              <path fill="currentColor" d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path>
+            </svg>
+          </div>
         </div>
-        <div class="comment-arrows">
-          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-left" class="svg-inline--fa fa-caret-left fa-w-6" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512">
-            <path fill="currentColor" d="M192 127.338v257.324c0 17.818-21.543 26.741-34.142 14.142L29.196 270.142c-7.81-7.81-7.81-20.474 0-28.284l128.662-128.662c12.599-12.6 34.142-3.676 34.142 14.142z"></path>
-          </svg>
-          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" class="svg-inline--fa fa-caret-right fa-w-6" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512">
-            <path fill="currentColor" d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path>
-          </svg>
+
+        <div class="comment-block">
+          <h3 class="commentBlock-title">Simon Burke, 28 лет</h3>
+          <div class="commentBlock-main">
+            <img src="img/comment-avatar3.png" alt="" class="comment-avatar">
+            <p class="comment-text">Псориаз начался у меня в юности во время экзаменов, видимо, из-за сильного стресса. Начался с шелушения, а уже через два месяца я ходил только в лонгсливах, так как моими руками можно было напугать даже самого закаленного хоррор-любителя. Это были не болячки, а уже какие-то шматки мяса. Врачи сказали псориаз. Назначали гормональные мази, крема, таблетки и даже уколы. Только все без толку. Унять зуд помогала только ледяная вода. Заживало всё долго, а потом тут же начиналось снова. Спасл меня крем Dr.Derm и диета. Скоро будет четыре месяца, как я забыл об этом, и не передать словами, как я счастлив.</p>
+          </div>
+
+          <div class="comment-arrows">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-left" class="svg-inline--fa fa-caret-left fa-w-6" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512">
+              <path fill="currentColor" d="M192 127.338v257.324c0 17.818-21.543 26.741-34.142 14.142L29.196 270.142c-7.81-7.81-7.81-20.474 0-28.284l128.662-128.662c12.599-12.6 34.142-3.676 34.142 14.142z"></path>
+            </svg>
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-right" class="svg-inline--fa fa-caret-right fa-w-6" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512">
+              <path fill="currentColor" d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"></path>
+            </svg>
+          </div>
         </div>
       </div>
     </div>
@@ -490,7 +527,18 @@
 
 
 </div>
-<script src="js/script.js"></script>
 <script src="js/animation.js"></script>
+<script src="js/jQuery%203.3.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script type="text/javascript">
+    $('.slider').slick({
+        infinite: true,
+        adaptiveHeight: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: true
+    });
+</script>
 </body>
 </html>

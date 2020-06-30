@@ -73,7 +73,7 @@ button {
 }
 
 select {
-    -webkit-appearance: menulist-button;
+    -webkit-appearance: none;
 }
 
 .wrapper {
@@ -1264,7 +1264,7 @@ select, input {
 .comment-block {
     background-color: #dcfff4;
     border-radius: 30px;
-    padding-bottom: 35px;
+    padding-bottom: 55px;
     position: relative;
 }
 
@@ -1312,7 +1312,7 @@ select, input {
     justify-content: center;
 }
 
-.comment-dot {
+.slick-dots li {
     width: 19px;
     height: 19px;
     margin: 0 11px;
@@ -1320,8 +1320,16 @@ select, input {
     border: 2px solid #385a50;
 }
 
-.comment-dot_active {
+.slick-dots .slick-active {
     background-color: #385a50;
+}
+
+.slick-dots {
+    bottom: 20px;
+}
+
+.slick-dots li.slick-active button:before {
+    content: '';
 }
 
 .comment-arrows {
@@ -1344,6 +1352,21 @@ select, input {
 
 .svg-inline--fa path {
     fill: #385a50;
+}
+
+.slick-prev {
+    left: 35px;
+    z-index: 2;
+}
+
+.slick-next {
+    right: 35px;
+    z-index: 2;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    content: '';
 }
 
 .fake {
@@ -1667,6 +1690,10 @@ a {
 
     .commentBlock-main {
         padding: 0 40px;
+    }
+
+    .comment-arrows {
+        display: none;
     }
 
     .fake {
