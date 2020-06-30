@@ -72,6 +72,10 @@ button {
     border-radius: 30px;
 }
 
+select {
+    -webkit-appearance: menulist-button;
+}
+
 .wrapper {
     max-width: 2000px;
     width: 100%;
