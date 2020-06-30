@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animation.css">
   <link rel="stylesheet" href="css/forIE.css">
 </head>
 <body>
@@ -48,25 +49,26 @@
       </div>
       <div class="order-right">
         <div class="formBlock">
-          <h2 class="formBlock-title">Только сегодня!</h2>
-          <h3 class="formBlock-sale">скидка -50%
+          <h3 class="formBlock-title">Только сегодня!</h3>
+          <h4 class="formBlock-sale">скидка -50%
             <br>
-            <span class="formBlock-sale__small">при заказе</span></h3>
-          <form action="" class="order-form">
+            <span class="formBlock-sale__small">при заказе</span></h4>
+          <form action="" class="order-form order_form" method="post">
             <label class="form-label">
               <span class="label-text">Страна</span>
-              <select id="country">
+              <select name="country" class="country_select">
                 <option value="">Россия</option>
               </select>
             </label>
             <label class="form-label">
               <span class="label-text">Ф.И.О</span>
-              <input class="form-order" type="text">
+              <input class="form-order" type="text" name="name" value="">
             </label>
             <label class="form-label">
               <span class="label-text">Телефон</span>
-              <input class="form-order" type="text">
+              <input class="form-order" type="text" name="phone">
             </label>
+            <input type="hidden" name="landing" value="">
             <button class="order-btn">заказать сейчас</button>
           </form>
         </div>
@@ -170,17 +172,17 @@
       <span class="tired-subTitle">скрывать свое тело?</span>
       <div class="tiredLists">
         <ul class="tiredList-right">
-          <li class="tiredList-item tiredList-item1">Не по себе от взглядов окружающих?</li>
-          <li class="tiredList-item tiredList-item2">Псориаз долго не проходит?</li>
-          <li class="tiredList-item tiredList-item3">Диета не действует?</li>
-          <li class="tiredList-item tiredList-item4">Надоело платить врачам?</li>
-          <li class="tiredList-item tiredList-item5">Устали от <br> невыносимого зуда?</li>
+          <li class="tiredList-item animation-shifting tiredList-item1">Не по себе от взглядов окружающих?</li>
+          <li class="tiredList-item animation-shifting2 tiredList-item2">Псориаз долго не проходит?</li>
+          <li class="tiredList-item animation-shifting3 tiredList-item3">Диета не действует?</li>
+          <li class="tiredList-item animation-shifting4 tiredList-item4">Надоело платить врачам?</li>
+          <li class="tiredList-item animation-shifting5 tiredList-item5">Устали от <br> невыносимого зуда?</li>
         </ul>
         <ul class="tiredList-right">
-          <li class="tiredList-item tiredList-item6 tiredList-item_right">Сложно подобрать одежду?</li>
-          <li class="tiredList-item tiredList-item7 tiredList-item_right">Люди боятся, что это заразно и сторонятся?</li>
-          <li class="tiredList-item tiredList-item8 tiredList-item_right">От увлажнения воздуха <br> нет толка?</li>
-          <li class="tiredList-item tiredList-item9 tiredList-item_right">Все больше замыкаетесь в себе?</li>
+          <li class="tiredList-item tiredList-item6 animation-shifting6 tiredList-item_right">Сложно подобрать одежду?</li>
+          <li class="tiredList-item tiredList-item7 animation-shifting1 tiredList-item_right">Люди боятся, что это заразно и сторонятся?</li>
+          <li class="tiredList-item tiredList-item8 animation-shifting2 tiredList-item_right">От увлажнения воздуха <br> нет толка?</li>
+          <li class="tiredList-item tiredList-item9 animation-shifting3 tiredList-item_right">Все больше замыкаетесь в себе?</li>
           <li class="tiredList-item tiredList-item10 tiredList-item_right">Кажется перепробовали
             <br> уже все от псориаза,
             <br> но ничего <br> не помогло?
@@ -331,6 +333,14 @@
         </li>
       </ul>
       <div class="weeks-footer">
+        <div class="alarm">
+          <div class="alarm-left">
+            <h3 class="alarm-title">ПОЖАЛУЙСТА, <br><span class="alarm-red">ОБРАТИТЕ ВНИМАНИЕ!</span></h3>
+          </div>
+          <div class="alarm-right">
+            <p class="alarm-text">Количество упаковок с Dr. Derm, необходимое для желаемого результата, <span class="alarm-bold">определяется индивидуально и в отдельных случаях может увеличиться.</span></p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -431,34 +441,35 @@
           </ul>
           <div class="order-prices">
             <div class="newPrice">
-              <span class="newPrices-text">новая цена:</span> <span class="newPrices-price">990 руб</span>
+              <span class="newPrices-text">новая цена:</span> <span class="newPrices-price price_main">990 руб</span>
             </div>
-            <span class="oldPrice">старая цена 1980 руб</span>
+            <span class="oldPrice">старая цена <span class="price_old">1980 руб</span></span>
           </div>
         </div>
 
       </div>
       <div class="order-right">
         <div class="formBlock">
-          <h2 class="formBlock-title">Только сегодня!</h2>
-          <h3 class="formBlock-sale">скидка -50%
+          <h3 class="formBlock-title">Только сегодня!</h3>
+          <h4 class="formBlock-sale">скидка -50%
             <br>
-            <span class="formBlock-sale__small">при заказе</span></h3>
-          <form action="" class="order-form">
+            <span class="formBlock-sale__small">при заказе</span></h4>
+          <form action="" class="order-form order_form" method="post">
             <label class="form-label">
               <span class="label-text">Страна</span>
-              <select id="country">
+              <select name="country" class="country_select">
                 <option value="">Россия</option>
               </select>
             </label>
             <label class="form-label">
               <span class="label-text">Ф.И.О</span>
-              <input class="form-order" type="text">
+              <input class="form-order" type="text" name="name" value="">
             </label>
             <label class="form-label">
               <span class="label-text">Телефон</span>
-              <input class="form-order" type="text">
+              <input class="form-order" type="text" name="phone">
             </label>
+            <input type="hidden" name="landing" value="">
             <button class="order-btn">заказать сейчас</button>
           </form>
         </div>
@@ -479,5 +490,6 @@
 
 </div>
 <script src="js/script.js"></script>
+<script src="js/animation.js"></script>
 </body>
 </html>
