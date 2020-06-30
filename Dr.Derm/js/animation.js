@@ -1,4 +1,4 @@
-window.onload = function animation() {
+(function animation() {
     firstBlockHide('order');
     titleHide('h1');
     titleHide('h2');
@@ -148,4 +148,4 @@ window.onload = function animation() {
             element[i].style.opacity = '0';
         }
     }
-};
+})();
