@@ -1,7 +1,7 @@
 (function animation() {
-    firstBlockHide('order');
     titleHide('h1');
     titleHide('h2');
+    hide('effects-img');
     hide('order2-left');
     hide('order2-right');
     hide('multi-img');
@@ -15,12 +15,12 @@
     setTimeout(function () {
         simpleAnimation('order-title', 'animation-fadeIn')
     }, 1000);
-    simpleAnimation('order-left', 'animation-fadeIn');
-    simpleAnimation('order-right', 'animation-moveLeft');
-    simpleAnimation('order-product', 'animation-moveRight');
 
     window.addEventListener('scroll', function () {
         simpleAnimation('effects-title', 'animation-fadeIn');
+        simpleAnimation('effects-img', 'animation-moveRight');
+        simpleAnimation('effects-img', 'animation-fadeIn', 1);
+        simpleAnimation('effects-img', 'animation-moveLeft', 2);
         simpleAnimation('exac-title', 'animation-fadeIn');
         simpleAnimation('mistake-title', 'animation-fadeIn');
         simpleAnimation('tired-title', 'animation-fadeIn');
@@ -53,20 +53,6 @@
             element.classList.add(animation);
             element.style.opacity = '1';
         }
-    }
-
-    function firstBlockHide(el) {
-        var domEl = document.getElementsByClassName(el),
-            arr = [];
-        domEl[0].childNodes.forEach(function (element) {
-            if (element.nodeName !== '#text') {
-                arr.push(element);
-                arr.forEach(function (el) {
-                    el.style.opacity = '0'
-                });
-            }
-        });
-        arr[1].style.opacity = '1';
     }
 
     function titleHide(el) {
@@ -132,7 +118,6 @@
             }
         });
         if (visibleBottom > elementBorder) {
-            console.log(arr.length);
             for (let i = arr.length - 1, j = 0; i >= 0, j < arr.length; i--, j++) {
                 setTimeout(function () {
                     arr[i].classList.add(animation);
