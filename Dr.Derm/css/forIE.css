@@ -1,5 +1,14 @@
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
 
+    select::-ms-expand{
+        display: none;
+    }
+
+    .order-product::after,
+    .order-product::before {
+        display: none;
+    }
+
     .order-subTitle,
     .oldPrice,
     .formBlock-title,
@@ -23,7 +32,6 @@
 
     .order-btn {
         background-image: repeating-linear-gradient(45deg, #c69ad6 0px, #c69ad6 5px, #b68cc6 5px, #b68cc6 7px);
-
     }
 
     .effects-title_black,
@@ -41,68 +49,29 @@
         color: #a23c59;
     }
 
-    .effects-img {
-        flex: 1 0 320px;
-    }
-
-    .milti-imgs {
-        flex: 1 0 690px;
-    }
-
-    .spec-main {
-        flex: 1 0 715px;
-    }
-
-    .fake-left {
-        flex: 1 0 570px;
-    }
-
-    .alarm-right {
-        flex: 1 0 610px;
-    }
-
-}
-
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none), (max-width: 991px) {
-    .order-product::after,
-    .order-product::before {
-        display: none;
-    }
-
-
-    .effects-img {
-        flex: 1 0 200px;
-        max-width: 200px;
-    }
-
-    .order2-left {
-        flex: 1 0 300px;
-        max-width: 300px;
-    }
-
-    .weeks-list {
-        max-width: 300px;
-    }
-
-    .alarm-right {
-        flex: 0 1 300px;
-    }
-}
-
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none), (max-width: 578px) {
-    .order-right {
-        max-width: 300px;
-    }
-
-    .effects-img {
-        flex: 1 0 100px;
-        max-width: 100px;
-    }
-
+    .effects-img,
     .milti-imgs,
     .spec-main,
-    .fake-left {
-        max-width: 300px;
+    .fake-left,
+    .weeks-list,
+    .order2-left,
+    .order-right {
+        flex: 0 1 auto;
+    }
+
+    .alarm {
+        justify-content: flex-start;
+    }
+
+    .order2List-text {
+        flex-shrink: 1;
+    }
+
+}
+
+@supports (-ms-ime-align:auto) {
+    :nth-child(2n).plus-item>.plusItem-text {
+        align-self: initial;
     }
 }
 

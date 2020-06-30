@@ -73,9 +73,12 @@ button {
 }
 
 select {
+    appearance: none;
+    -moz-appearance: none;
     -webkit-appearance: none;
     background-color: #fff;
 }
+
 
 .select {
     position: relative;
@@ -1041,7 +1044,6 @@ select, input {
 
 .plus-item:nth-child(even) > .plusItem-text {
     margin-top: -215px;
-    -moz-margin-bottom: 215px;
     align-self: flex-end;
     padding: 0 0 20px;
 }
@@ -1194,7 +1196,7 @@ select, input {
 
 .alarm-right {
     max-width: 610px;
-    flex: 1 0 190px;
+    flex: 1 0 auto;
 }
 
 .alarm-red {
@@ -1907,7 +1909,7 @@ a {
     }
 
     .exac-title {
-        font-size: 45px;
+        font-size: 35px;
         margin-bottom: 20px;
     }
 
@@ -1975,6 +1977,7 @@ a {
 
     .spec-title {
         margin-bottom: 20px;
+        font-size: 40px;
     }
 
     .fake-title {
