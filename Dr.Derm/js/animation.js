@@ -16,7 +16,7 @@ animationSimple('.order2-left', 'animation-moveRight');
 animationSimple('.order2-right', 'animation-moveLeft');
 animationSimple('.product_fake', 'animation-moveLeft');
 animationSimple('.fake-right', 'animation-fadeIn');
-animationSimple('.exacList-item', 'animation-moveRight', 'animation-moveRight');
+animationSimple('.exacList-item', 'animation-moveRight');
 animationSimple('.effects-img', 'animation-fadeIn');
 animationSimple('.mistakesList-item', 'animation-fadeIn');
 animationReverse('.multi-img', 'animation-moveRight');
