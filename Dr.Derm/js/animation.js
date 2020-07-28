@@ -19,12 +19,21 @@ animationSimple('.fake-right', 'animation-fadeIn');
 animationSimple('.exacList-item', 'animation-moveRight');
 animationSimple('.effects-img', 'animation-fadeIn');
 animationSimple('.mistakesList-item', 'animation-fadeIn');
-animationReverse('.multi-img', 'animation-moveRight');
-animationReverse('.multiList-item', 'animation-moveLeft');
 animationSimple('.plus-item', 'animation-fadeIn');
-animationReverse('.weekList-item', 'animation-fadeIn');
 
-function hide(arr) { /*скрываем элементы*/
+if (document.documentElement.clientWidth <= 576) {
+    animationSimple('.weekList-item', 'animation-fadeIn');
+    animationSimple('.multi-img', 'animation-moveLeft');
+    animationSimple('.multiList-item', 'animation-moveLeft');
+}
+
+else {
+    animationReverse('.multi-img', 'animation-moveLeft')
+    animationReverse('.multiList-item', 'animation-moveLeft')
+    animationReverse('.weekList-item', 'animation-fadeIn')
+}
+
+function hide(arr) {
     let element = document.querySelectorAll(arr);
     for (let i = 0; i < element.length; i++) {
         element[i].style.opacity = '0';
@@ -35,7 +44,7 @@ function position(el) { /*определяем кооординаты элеме
     let element = document.querySelectorAll(el),
         elementBorder = window.pageYOffset + element[0].getBoundingClientRect().top,
         windowHeight = document.documentElement.clientHeight,
-        visibleBottom = window.pageYOffset + windowHeight - 200,
+        visibleBottom = window.pageYOffset + windowHeight - 50,
         pos = {
             element: element,
             elementBorder: elementBorder,
@@ -45,7 +54,7 @@ function position(el) { /*определяем кооординаты элеме
     return pos;
 }
 
-function animationSimple(arr, animation) {/*в аргументы передааем: arr = DOM элемент, animation = анимация*/
+function animationSimple(arr, animation) {/*arr = DOM элемент*/
     hide(arr);
     window.addEventListener('scroll', function () {
         let pos = position(arr);
@@ -55,7 +64,7 @@ function animationSimple(arr, animation) {/*в аргументы передаа
                 setTimeout(function () {
                     pos.element[i].classList.add(animation);
                     pos.element[i].style.opacity = '1';
-                }, i * 300);
+                }, i * 150);
             }
         }
     }, false);
@@ -74,7 +83,7 @@ function animationReverse(arr, animation) {
                 setTimeout(function () {
                     pos.element[i].classList.add(animation);
                     pos.element[i].style.opacity = '1';
-                }, j * 300);
+                }, j * 150);
             }
         }
     }, false);

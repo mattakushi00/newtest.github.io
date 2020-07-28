@@ -71,7 +71,12 @@
         margin-top: -170px;
         margin-bottom: 0;
     }
+}
 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none), (max-width: 991px) {
+    :nth-child(2n).plus-item>.plusItem-text {
+        margin-top: 55px;
+    }
 }
 
 @supports (-ms-ime-align:auto) {
