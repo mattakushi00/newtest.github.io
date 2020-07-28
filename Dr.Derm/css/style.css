@@ -1563,7 +1563,7 @@ a {
         display: block;
         width: 100%;
         top: 0;
-        bottom: 0;
+        bottom: -1px;
         left: 0;
         right: 0;
         margin: auto;
@@ -1571,7 +1571,8 @@ a {
     }
 
     .tired {
-        padding-bottom: 250px;
+        padding-bottom: 10px;
+        background-position: 50% 60%;
     }
 
     .tiredList-right,
@@ -1586,9 +1587,9 @@ a {
     }
 
     .order2 {
-        padding-top: 650px;
-        background-position-x: 55%;
-        margin-top: -720px;
+        background: none;
+        padding-top: 10px;
+        margin-top: 0;
     }
 
     .order2-left {
@@ -1819,11 +1820,6 @@ a {
         padding: 50px 20px 20px;
     }
 
-    .tired {
-        padding-bottom: 10px;
-        background-position: 50% 60%;
-    }
-
     .tired-title {
         font-size: 70px;
     }
@@ -1834,12 +1830,6 @@ a {
 
     .tiredLists {
         align-items: center;
-    }
-
-    .order2 {
-        background: none;
-        padding-top: 10px;
-        margin-top: 0;
     }
 
     .order2-right .order-product:after,
