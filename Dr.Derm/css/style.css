@@ -1043,15 +1043,9 @@ select, input {
 }
 
 .plus-item:nth-child(even) > .plusItem-text {
-    margin-top: -215px;
+    margin-bottom: 215px;
     align-self: flex-end;
     padding: 0 0 20px;
-}
-
-@-moz-document url-prefix() {
-    .plus-item:nth-child(even) > .plusItem-text {
-        margin-bottom: 215px;
-    }
 }
 
 .plusItem-title_small {
@@ -1229,7 +1223,7 @@ select, input {
 .spec-text {
     display: block;
     font-size: 24px;
-    margin-bottom: 45px;
+    margin-bottom: 25px;
 }
 
 .spec-name,

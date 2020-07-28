@@ -67,6 +67,11 @@
         flex-shrink: 1;
     }
 
+    :nth-child(2n).plus-item>.plusItem-text {
+        margin-top: -170px;
+        margin-bottom: 0;
+    }
+
 }
 
 @supports (-ms-ime-align:auto) {
