@@ -1443,16 +1443,21 @@ footer a {
 }
 
 /*for mobile-safari*/
-@media only screen and (-webkit-min-device-pixel-ratio: 1) {
-    ::i-block-chrome, .every2Item-title {
-        transform: none;
-    }
+@media not all and (min-resolution: .001dpcm) {
+    @media {
+        .every2Item-title {
+            transform: none;
+        }
 
-    ::i-block-chrome, .every2Item-text {
-        opacity: 1;
-    }
+        .every2Item-text {
+            opacity: 1;
+        }
 
-    ::i-block-chrome, .rescue-blockImg:before {
-        display: none;
+        .rescue-blockImg:before {
+            display: none;
+        }
     }
 }
+
+
+
