@@ -1270,6 +1270,7 @@ footer a {
 
     .rescue-block {
         padding-right: 0;
+        background: #fff;
     }
 
     .rescue-text {
@@ -1453,9 +1454,6 @@ footer a {
             opacity: 1;
         }
 
-        .rescue-blockImg:before {
-            display: none;
-        }
     }
 }
 
