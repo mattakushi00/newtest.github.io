@@ -1249,16 +1249,7 @@ footer a {
 
     .rescue-mobile .product-img img {
         max-width: 75px;
-    } {
-    display: block;
-    width: 43%;
-    height: 60%;
-    bottom: 0;
-    top: initial;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
+    }
 
     .rescue .container {
         justify-content: center;
@@ -1276,6 +1267,7 @@ footer a {
     .rescue-text {
         padding: 10px 0;
         margin-bottom: 20px;
+        background: none;
     }
 
     .rescue-text_big {
@@ -1342,12 +1334,6 @@ footer a {
         margin-top: 10px;
     }
 
-    @media not all and (min-resolution: .001dpcm) {
-        .rescue {
-            background: none;
-            background-color: #fff;
-        }
-    }
 }
 
 @media screen and (max-width: 768px) {
