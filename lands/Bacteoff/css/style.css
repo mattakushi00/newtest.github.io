@@ -673,7 +673,7 @@ header .container,
 }
 
 .every2Item-text {
-    font-size: 14px;
+    font-size: 16px;
     width: 100%;
     position: relative;
     z-index: 3;
@@ -1149,6 +1149,29 @@ footer a {
     color: #779c2f;
 }
 
+.slick-dots {
+    bottom: 25px;
+}
+
+.slick-dots li {
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.slick-dots li.slick-active {
+    background: #000;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #fff;
+}
+
+.slick-dots li button:before {
+    content: '';
+}
+
 
 /*--------------------------------------------------------*/
 
@@ -1412,6 +1435,14 @@ footer a {
 
     .consist-block .row {
         justify-content: center;
+    }
+
+    .effect-text {
+        text-align: left;
+    }
+
+    .spec-text_big {
+        font-size: 18px;
     }
 
 }
