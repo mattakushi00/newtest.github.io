@@ -2,3 +2,5 @@
 .idea
 .ylm
 .gitignore
+/scss
+.map.css
