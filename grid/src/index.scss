@@ -1,0 +1,17 @@
+/*commons*/
+@import "scss/commons/customReset";
+@import "scss/commons/grid";
+@import "scss/commons/colors";
+
+body {
+	font-family: 'Arial', sans-serif;
+}
+
+/*blocks*/
+@import "scss/blocks/header";
+@import "scss/blocks/block1";
+
+/*elements*/
+@import "scss/elements/socials";
+@import "scss/elements/svg";
+@import "scss/elements/form";

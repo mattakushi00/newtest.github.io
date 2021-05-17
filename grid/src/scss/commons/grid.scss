@@ -1,0 +1,16 @@
+.wrap {
+	max-width: 1920px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.container {
+	display: grid;
+	padding: 0 15px;
+	grid-template-columns: 1fr 1140px 1fr;
+}
+
+.content {
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
