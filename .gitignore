@@ -4,3 +4,4 @@
 .gitignore
 /scss
 .map.css
+node_modules
