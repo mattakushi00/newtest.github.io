@@ -22,6 +22,10 @@
 		&:before {
 			background: none;
 		}
+
+		img {
+			animation: productMove 10s ease-in-out infinite;
+		}
 	}
 
 	&__list {
@@ -83,6 +87,7 @@
 			position: absolute;
 			height: 118px;
 			display: block;
+			z-index: 2;
 		}
 	}
 
@@ -155,5 +160,11 @@
 		&__product {
 			display: none;
 		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.life {
+		display: none;
 	}
 }

@@ -35,3 +35,9 @@
 		color: $red;
 	}
 }
+
+@media screen and (max-width: 768px){
+	.use {
+		display: none;
+	}
+}

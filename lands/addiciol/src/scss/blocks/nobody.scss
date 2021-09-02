@@ -111,6 +111,18 @@
 	}
 }
 
+@media screen and (max-width: 768px){
+	.nobody {
+		&__item {
+			display: none;
+
+			&:first-child {
+				display: flex;
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 576px){
 .nobody {
 	&__item {

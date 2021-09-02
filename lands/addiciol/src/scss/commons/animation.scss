@@ -12,6 +12,24 @@
 	}
 }
 
+@keyframes productMove {
+	from {
+		transform: translateX(0);
+	}
+	33% {
+		transform: translateX(10px);
+	}
+
+	66% {
+		transform: translateX(-10px);
+	}
+
+
+	to {
+		transform: translateX(0);
+	}
+}
+
 @keyframes btn {
 	from {
 		transform: scale(1) rotate(0);

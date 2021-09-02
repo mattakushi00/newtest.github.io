@@ -1,11 +1,11 @@
 .help {
 	background-color: #fff;
-	padding: 120px 0 70px;
 	position: relative;
+	padding: 120px 0 70px;
 
 	&__container {
-		display: block;
 		position: static;
+		display: block;
 	}
 
 	&__title {
@@ -20,31 +20,31 @@
 		margin-bottom: 25px;
 
 		&_color {
-			max-width: 540px;
 			font-weight: 600;
 			color: $red;
+			max-width: 540px;
 		}
 	}
 
 	&__product {
 		position: absolute;
-		bottom: 0;
 		right: 50%;
+		bottom: 0;
 		max-width: 456px;
-		transform: translateX(80%) translateY(15%);
 		z-index: 2;
+		transform: translateX(80%) translateY(15%);
 	}
 
 	&__img {
 		position: absolute;
-		max-width: 382px;
 		right: 50%;
 		bottom: 0;
+		max-width: 382px;
 		transform: translateX(155%);
 	}
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) {
 	.help {
 		&__img {
 			transform: translateX(160%);
@@ -56,14 +56,14 @@
 	}
 }
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 991px) {
 	.help {
 		padding: 30px 0;
 
 		&__container {
 			display: flex;
-			justify-content: center;
 			align-items: flex-start;
+			justify-content: center;
 		}
 
 		&__img {
@@ -82,16 +82,30 @@
 		}
 
 		&__product {
-			max-width: 100%;
 			position: relative;
-			transform: none;
 			right: 0;
 			bottom: 0;
+			max-width: 100%;
 			margin: 10px auto;
+			transform: none;
 
 			img {
 				max-width: 380px;
 			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.help {
+		&__title,
+		&__text {
+			display: none;
+
+		}
+
+		&__text_color {
+			display: block;
 		}
 	}
 }
